@@ -9,9 +9,8 @@ public class Subtask extends Task {
     }
 
     public Subtask(int epicId, int id, String name, String description, String status) {
-        super(name, description, status);
+        super(id, name, description, status);
         this.epicId = epicId;
-        this.setId(id);
     }
 
     public int getEpicId() {

@@ -6,15 +6,12 @@ import java.util.*;
 
 public class Manager {
     private int id;
-    private Map<Integer, Task> taskHashMap;
-    private Map<Integer, Epic> epicHashMap;
-    private Map<Integer, Subtask> subtaskHashMap;
+    private Map<Integer, Task> taskHashMap = new HashMap<>();;
+    private Map<Integer, Epic> epicHashMap = new HashMap<>();;
+    private Map<Integer, Subtask> subtaskHashMap = new HashMap<>();;
 
     public Manager() {
         this.id = 0;
-        this.taskHashMap = new HashMap<>();
-        this.epicHashMap = new HashMap<>();
-        this.subtaskHashMap = new HashMap<>();
     }
 
     public void addTask(Task task) {
